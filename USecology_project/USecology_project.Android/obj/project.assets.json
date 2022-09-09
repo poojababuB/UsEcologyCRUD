@@ -3413,11 +3413,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\usecology_samplemodel\\USecology_project\\USecology_project.Android\\USecology_project.Android.csproj",
+      "projectUniqueName": "D:\\gitWorkspace\\UsEcologyCrud\\USecology_project\\USecology_project.Android\\USecology_project.Android.csproj",
       "projectName": "USecology_project.Android",
-      "projectPath": "D:\\usecology_samplemodel\\USecology_project\\USecology_project.Android\\USecology_project.Android.csproj",
+      "projectPath": "D:\\gitWorkspace\\UsEcologyCrud\\USecology_project\\USecology_project.Android\\USecology_project.Android.csproj",
       "packagesPath": "C:\\Users\\pooja.b\\.nuget\\packages\\",
-      "outputPath": "D:\\usecology_samplemodel\\USecology_project\\USecology_project.Android\\obj\\",
+      "outputPath": "D:\\gitWorkspace\\UsEcologyCrud\\USecology_project\\USecology_project.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
@@ -3438,8 +3438,8 @@
       "frameworks": {
         "monoandroid12.0": {
           "projectReferences": {
-            "D:\\usecology_samplemodel\\USecology_project\\USecology_project\\USecology_project.csproj": {
-              "projectPath": "D:\\usecology_samplemodel\\USecology_project\\USecology_project\\USecology_project.csproj"
+            "D:\\gitWorkspace\\UsEcologyCrud\\USecology_project\\USecology_project\\USecology_project.csproj": {
+              "projectPath": "D:\\gitWorkspace\\UsEcologyCrud\\USecology_project\\USecology_project\\USecology_project.csproj"
             }
           }
         }

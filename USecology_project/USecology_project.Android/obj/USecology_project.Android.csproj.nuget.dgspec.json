@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\usecology_samplemodel\\USecology_project\\USecology_project.Android\\USecology_project.Android.csproj": {}
+    "D:\\gitWorkspace\\UsEcologyCrud\\USecology_project\\USecology_project.Android\\USecology_project.Android.csproj": {}
   },
   "projects": {
-    "D:\\usecology_samplemodel\\USecology_project\\USecology_project.Android\\USecology_project.Android.csproj": {
+    "D:\\gitWorkspace\\UsEcologyCrud\\USecology_project\\USecology_project.Android\\USecology_project.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\usecology_samplemodel\\USecology_project\\USecology_project.Android\\USecology_project.Android.csproj",
+        "projectUniqueName": "D:\\gitWorkspace\\UsEcologyCrud\\USecology_project\\USecology_project.Android\\USecology_project.Android.csproj",
         "projectName": "USecology_project.Android",
-        "projectPath": "D:\\usecology_samplemodel\\USecology_project\\USecology_project.Android\\USecology_project.Android.csproj",
+        "projectPath": "D:\\gitWorkspace\\UsEcologyCrud\\USecology_project\\USecology_project.Android\\USecology_project.Android.csproj",
         "packagesPath": "C:\\Users\\pooja.b\\.nuget\\packages\\",
-        "outputPath": "D:\\usecology_samplemodel\\USecology_project\\USecology_project.Android\\obj\\",
+        "outputPath": "D:\\gitWorkspace\\UsEcologyCrud\\USecology_project\\USecology_project.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid12.0": {
             "projectReferences": {
-              "D:\\usecology_samplemodel\\USecology_project\\USecology_project\\USecology_project.csproj": {
-                "projectPath": "D:\\usecology_samplemodel\\USecology_project\\USecology_project\\USecology_project.csproj"
+              "D:\\gitWorkspace\\UsEcologyCrud\\USecology_project\\USecology_project\\USecology_project.csproj": {
+                "projectPath": "D:\\gitWorkspace\\UsEcologyCrud\\USecology_project\\USecology_project\\USecology_project.csproj"
               }
             }
           }
@@ -54,14 +54,14 @@
         }
       }
     },
-    "D:\\usecology_samplemodel\\USecology_project\\USecology_project\\USecology_project.csproj": {
+    "D:\\gitWorkspace\\UsEcologyCrud\\USecology_project\\USecology_project\\USecology_project.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\usecology_samplemodel\\USecology_project\\USecology_project\\USecology_project.csproj",
+        "projectUniqueName": "D:\\gitWorkspace\\UsEcologyCrud\\USecology_project\\USecology_project\\USecology_project.csproj",
         "projectName": "USecology_project",
-        "projectPath": "D:\\usecology_samplemodel\\USecology_project\\USecology_project\\USecology_project.csproj",
+        "projectPath": "D:\\gitWorkspace\\UsEcologyCrud\\USecology_project\\USecology_project\\USecology_project.csproj",
         "packagesPath": "C:\\Users\\pooja.b\\.nuget\\packages\\",
-        "outputPath": "D:\\usecology_samplemodel\\USecology_project\\USecology_project\\obj\\",
+        "outputPath": "D:\\gitWorkspace\\UsEcologyCrud\\USecology_project\\USecology_project\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

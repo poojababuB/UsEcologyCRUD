@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "quFqGGIaSktaJtDhW7bQZjgK51xqxz6NEn5swXWAfZDq8HAEbkqphhYM54Thf3of2tPrS2OitKG/UkqTfXnLmA==",
+  "dgSpecHash": "5iVq2+VMxssLFJCOG0IaEusu3q9QJmtYRa/M1vwUmfMT7GKTgXv14LRcQz4Laq33/S2+3DteNc+EAwjtjfRxAQ==",
   "success": true,
-  "projectFilePath": "D:\\usecology_samplemodel\\USecology_project\\USecology_project.Android\\USecology_project.Android.csproj",
+  "projectFilePath": "D:\\gitWorkspace\\UsEcologyCrud\\USecology_project\\USecology_project.Android\\USecology_project.Android.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\pooja.b\\.nuget\\packages\\sqlite-net-pcl\\1.8.116\\sqlite-net-pcl.1.8.116.nupkg.sha512",
     "C:\\Users\\pooja.b\\.nuget\\packages\\sqlitepclraw.bundle_green\\2.0.4\\sqlitepclraw.bundle_green.2.0.4.nupkg.sha512",
