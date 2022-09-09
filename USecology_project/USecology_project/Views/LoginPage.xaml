@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="USecology_project.LoginPage"
+             xmlns:local="clr-namespace:USecology_project.Custom"
+             BackgroundColor="White"
+             NavigationPage.HasNavigationBar="false">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <ContentPage.Content>
+        <Grid x:Name="full">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="4*"/>
+                <ColumnDefinition Width="92*"/>
+                <ColumnDefinition Width="4*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="7*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="15*"/>
+                <RowDefinition Height="2*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="5*"/>
+                <RowDefinition Height="5*"/>
+            </Grid.RowDefinitions>
+            <Image Grid.Row="1" Grid.Column="1" Source="logo.png" Margin="25" HeightRequest="100" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand"></Image>
+            <Frame Padding="17" Grid.Row="2" Grid.Column="1" CornerRadius="15" BackgroundColor="Transparent" BorderColor="Gray">
+                <Grid >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="4*"/>
+                        <ColumnDefinition Width="55*"/>
+                        <ColumnDefinition Width="25*"/>
+                        <ColumnDefinition Width="55*"/>
+                        <ColumnDefinition Width="4*"/>
+                    </Grid.ColumnDefinitions>
+                    <Label FontAttributes="Bold" Grid.Column="1"  Text="AESOP" TextColor="Gray" FontSize="20"   HorizontalOptions="CenterAndExpand"/>
+                    <Switch IsToggled="True" ThumbColor="#34C759" OnColor="#AAE3B9" Grid.Column="2" HorizontalOptions="CenterAndExpand"/>
+                    <Label  Grid.Column="3" Text="EQAI" TextColor="Gray" FontSize="20" FontAttributes="Bold"  HorizontalOptions="CenterAndExpand"/>
+                </Grid>
+            </Frame>
+            <Frame Grid.Row="3" Grid.Column="1" BackgroundColor="Transparent">
+            </Frame>
+            <Frame Grid.Row="4" Grid.Column="1" CornerRadius="15" BackgroundColor="Transparent" BorderColor="Gray">
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="49*"/>
+                        <RowDefinition Height="2*"/>
+                        <RowDefinition Height="49*"/>
+                    </Grid.RowDefinitions>  
+                    <StackLayout Grid.Row="0" Orientation="Horizontal">
+                        <Image Source="user.png" HorizontalOptions="Start"/>
+                        <local:Custom_Entry Style="{StaticResource LoginEntry}" x:Name="username" Text="{Binding Username}" Placeholder="Username     " MaxLength="50" PlaceholderColor="Gray">
+                        </local:Custom_Entry>
+                    </StackLayout>
+                    <StackLayout Grid.Row="1" Orientation="Horizontal">
+                        <BoxView HorizontalOptions="FillAndExpand" Color="LightGray"/>
+                    </StackLayout>
+                    <StackLayout Grid.Row="2" Orientation="Horizontal">
+                        <Image Source="key.png" HeightRequest="20" HorizontalOptions="Start"/>
+                        <local:Custom_Entry x:Name="password" MaxLength="8" IsPassword="True" Placeholder="Password     " PlaceholderColor="Gray"></local:Custom_Entry>
+                        
+                    </StackLayout>
+                </Grid>
+            </Frame>
+            <Frame Grid.Row="5" Grid.Column="1" BackgroundColor="Transparent">
+            </Frame>
+            <Frame  Padding="15,0,0,2" Grid.Row="6" Grid.Column="1" CornerRadius="15" BackgroundColor="Transparent" BorderColor="Gray">
+                <Grid >
+                    <StackLayout Orientation="Horizontal" Grid.Row="0">
+                        <Image Source="location.png" HorizontalOptions="Start"/>
+                        <local:Custom_Entry  MaxLength="5" Placeholder="Location Code" PlaceholderColor="Gray"></local:Custom_Entry>
+                        
+                    </StackLayout>
+                </Grid>
+            </Frame>
+            <Button Grid.Row="7" x:Name="loginButton" Grid.Column="1" Margin="80,20,80,10" CornerRadius="10" BackgroundColor="#34C759" 
+                    Command="{Binding LoginCommand}" Text="Login" TextColor="White" FontAttributes="Bold"></Button>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
+
+

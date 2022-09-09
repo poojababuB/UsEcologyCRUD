@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="USecology_project.Views.ShowEntryPage"
+             NavigationPage.HasBackButton="false">
+    <ContentPage.Content>
+        <StackLayout>
+            <ListView  x:Name="myLists" ItemsSource="{Binding ViewData}" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid x:Name="item">
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="3*"/>
+                                    <RowDefinition Height="94*"/>
+                                    <RowDefinition Height="3*"/>
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="20*"/>
+                                    <ColumnDefinition Width="30*"/>
+                                    <ColumnDefinition Width="40*"/>
+                                    <ColumnDefinition Width="10*"/>
+                                </Grid.ColumnDefinitions>
+
+                                <Label Grid.Row="1" Grid.Column="0" Text="{Binding Id}" TextColor="Blue" FontSize="25" FontAttributes="Bold"  HorizontalOptions="CenterAndExpand"/>
+                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Name}" TextColor="Green" FontSize="25" FontAttributes="Bold"  HorizontalOptions="CenterAndExpand"/>
+                                <Label Grid.Row="1" Grid.Column="2" Text="{Binding Address}" TextColor="Magenta" FontSize="25" FontAttributes="Bold"  HorizontalOptions="CenterAndExpand"/>
+                                <RadioButton Grid.Row="1" Grid.Column="3"/>
+                            </Grid>
+                        </ViewCell>
+
+                    </DataTemplate>
+
+                </ListView.ItemTemplate>
+
+            </ListView>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

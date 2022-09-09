@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             xmlns:local="clr-namespace:USecology_project.Custom"
+             x:Class="USecology_project.Views.LoginEntryPage"
+             Title="Login Entry">
+
+    <ContentPage.Content>
+        <Grid x:Name="full">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="8*"/>
+                <ColumnDefinition Width="80*"/>
+                <ColumnDefinition Width="8*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="8*"/>
+                <RowDefinition Height="80*"/>
+                <RowDefinition Height="8*"/>
+            </Grid.RowDefinitions>
+            <Frame Grid.Column="1" Grid.Row="1" CornerRadius="15" BackgroundColor="Transparent" BorderColor="Gray">
+                <Grid>
+                    <Grid.RowDefinitions>
+
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height=".2*"/>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height=".2*"/>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height=".2*"/>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height=".2*"/>
+                        <RowDefinition Height="20*"/>
+                        <RowDefinition Height="12*"/>
+                        <RowDefinition Height="30*"/>
+                    </Grid.RowDefinitions>
+                    <StackLayout Grid.Row="0" Orientation="Horizontal">
+                        <Image Source="Name.png" HeightRequest="20" HorizontalOptions="Start"/>
+                        <local:Custom_Entry x:Name="name"
+                                            Text="{Binding ModelName}"
+                                            Placeholder="Name     "
+                                            MaxLength="50"
+                                            PlaceholderColor="Gray">
+
+                        </local:Custom_Entry>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="1" Orientation="Horizontal">
+                        <BoxView HorizontalOptions="FillAndExpand"  Color="LightGray"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="2" Orientation="Horizontal">
+                        <Image Source="Address.png" HeightRequest="20" HorizontalOptions="Start"/>
+                        <local:Custom_Entry x:Name="address"
+                                            Text="{Binding ModelAddress}"
+                                            MaxLength="100"
+                                             Placeholder="Address     " 
+                                             PlaceholderColor="Gray"></local:Custom_Entry>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="3" Orientation="Horizontal">
+                        <BoxView HorizontalOptions="FillAndExpand"  Color="LightGray"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="4" Orientation="Horizontal">
+                        <Image Source="State.png" HeightRequest="20" HorizontalOptions="Start"/>
+                        <local:Custom_Entry x:Name="state"
+                                            Text="{Binding ModelState}"
+                                            Placeholder="State     "
+                                            MaxLength="20"
+                                            PlaceholderColor="Gray">
+                        </local:Custom_Entry>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="5" Orientation="Horizontal">
+                        <BoxView HorizontalOptions="FillAndExpand" Color="LightGray"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="6" Orientation="Horizontal">
+                        <Image Source="Phone.png" HeightRequest="20" HorizontalOptions="Start"/>
+                        <local:Custom_Entry x:Name="phone"
+                                            Text="{Binding ModelPhone}"
+                                            Placeholder="Phone     " 
+                                            PlaceholderColor="Gray"
+                                            MaxLength="10">
+                        </local:Custom_Entry>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="7" Orientation="Horizontal">
+                        <BoxView HorizontalOptions="FillAndExpand" Color="LightGray"/>
+                    </StackLayout>
+
+                    <StackLayout Grid.Row="9" Orientation="Horizontal">
+                        <Button  HorizontalOptions="CenterAndExpand" FontAttributes="Bold" 
+                                 x:Name="btnAdd" WidthRequest="150" HeightRequest="20" 
+                                 Text="Add" BackgroundColor="#E59466 " 
+                                 CornerRadius="15" Command="{Binding submit}" />
+                    </StackLayout>
+
+                </Grid>
+            </Frame>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
