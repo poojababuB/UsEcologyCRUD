@@ -121,16 +121,15 @@ namespace USecology_project.ViewModels
 					ModelSql.Add(post);
 					bool answer = await Application.Current.MainPage.DisplayAlert("Success!", "Data Added Successfully", "Ok", "Cancel");
 					
+					
+					await App.Instance.showentrypage.showview.ViewMethod();
 					if (answer)
 					{
-						ModelName = string.Empty; 
+						ModelName = string.Empty;
 						ModelAddress = string.Empty;
 						ModelState = string.Empty;
 						ModelPhone = string.Empty;
 					}
-
-
-
 
 				}
 

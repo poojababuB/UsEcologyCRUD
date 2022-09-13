@@ -2,6 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="USecology_project.Views.EditListItem"
+              xmlns:local="clr-namespace:USecology_project.Custom"
              Title="Edit Detail">
 
     <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
@@ -16,28 +17,34 @@
                 <RowDefinition Height="20*"/>
             </Grid.RowDefinitions>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="10*"/>
                 <ColumnDefinition Width="20*"/>
-                <ColumnDefinition Width="40*"/>
-                <ColumnDefinition Width="10*"/>
+                <ColumnDefinition Width="80*"/>
+                <ColumnDefinition Width="20*"/>
             </Grid.ColumnDefinitions>
-            <Label Grid.Row="0" Grid.Column="1" Text="Id: " TextColor="Blue"/>
-            <Entry Grid.Row="0" Grid.Column="2" Text="{Binding Id}" IsReadOnly="True"/>
-
-            <Label Grid.Row="1" Grid.Column="1" Text="Name: " TextColor="Blue"/>
-            <Entry Grid.Row="1" Grid.Column="2" Text="{Binding Name}"/>
-
-            <Label Grid.Row="2" Grid.Column="1" Text="Address: " TextColor="Blue"/>
-            <Entry Grid.Row="2" Grid.Column="2" Text="{Binding Address}"/>
-
-            <Label Grid.Row="3" Grid.Column="1"  Text="State: " TextColor="Blue"/>
-            <Entry Grid.Row="3" Grid.Column="2"  Text="{Binding State}"/>
-
-            <Label Grid.Row="4" Grid.Column="1"  Text="Phone: " TextColor="Blue"/>
-            <Entry Grid.Row="4" Grid.Column="2" Text="{Binding Phone}" MaxLength="10"/>
-
-            <Button Grid.Row="5" Grid.Column="1"  Text="Delete" Command="{Binding Deleteitem}" BackgroundColor="PaleVioletRed" CornerRadius="15"/>
-            <Button Grid.Row="5" Grid.Column="2"  Text="Save and Update" Command="{Binding SaveAndUpdate}" BackgroundColor="CornflowerBlue" CornerRadius="15"/>
+            <StackLayout Grid.Row="0" Grid.Column="1" Orientation="Horizontal">
+                <Label  Text="Id: " TextColor="Blue" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
+                <local:EditEntry  Text="{Binding Id}" IsReadOnly="True" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <StackLayout Grid.Row="1" Grid.Column="1" Orientation="Horizontal">
+                <Label  Text="Name: " TextColor="Blue"  HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
+                <local:EditEntry   Text="{Binding Name}"  HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <StackLayout Grid.Row="2" Grid.Column="1" Orientation="Horizontal">
+                <Label   Text="Address: " TextColor="Blue" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" />
+                <local:EditEntry   Text="{Binding Address}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand" />
+            </StackLayout>
+            <StackLayout Grid.Row="3" Grid.Column="1" Orientation="Horizontal">
+                <Label  Text="State: " TextColor="Blue" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
+                <local:EditEntry    Text="{Binding State}" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <StackLayout Grid.Row="4" Grid.Column="1" Orientation="Horizontal">
+            <Label   Text="Phone: " TextColor="Blue" HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand"/>
+                <local:EditEntry   Text="{Binding Phone}" MaxLength="10"  Keyboard="Telephone" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand"/>
+            </StackLayout>
+            <StackLayout Grid.Row="5" Grid.Column="1" Orientation="Horizontal">
+                <Button  Text="Delete" Command="{Binding Deleteitem}" BackgroundColor="PaleVioletRed" CornerRadius="15"/>
+                <Button  Text="Save and Update" Command="{Binding SaveAndUpdate}" BackgroundColor="CornflowerBlue" CornerRadius="15"/>
+            </StackLayout>
         </Grid>
     </StackLayout>
 </ContentPage>

@@ -30,12 +30,12 @@ namespace USecology_project.Views
 				base.OnAppearing();
 				showview.ViewMethod();
 			}
-			catch(Exception e)
+			catch (Exception e)
 			{
 
 			}
 		}
 
-		
+
 	}
 }

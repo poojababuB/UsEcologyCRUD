@@ -9,10 +9,5 @@
             
             >
 
-    <TabbedPage.Children>
-       
-        <!--<Views:LoginEntryPage Title="User Entry" IconImageSource="Entry.png"/>
-        
-        <Views:ShowEntryPage Title="ListView" IconImageSource="ListShow.png"/>-->
-    </TabbedPage.Children>
+    
 </TabbedPage>

@@ -1340,3 +1340,4 @@ D:\gitWorkspace\UsEcologyCrud\USecology_project\USecology_project.Android\obj\De
 D:\gitWorkspace\UsEcologyCrud\USecology_project\USecology_project.Android\obj\Debug\120\stamp\_ResolveLibraryProjectImports.stamp
 D:\gitWorkspace\UsEcologyCrud\USecology_project\USecology_project.Android\obj\Debug\120\res\drawable\delete.png
 D:\gitWorkspace\UsEcologyCrud\USecology_project\USecology_project.Android\obj\Debug\120\android\src\crc641604e781815c1990\CustomRendererEntry.java
+D:\gitWorkspace\UsEcologyCrud\USecology_project\USecology_project.Android\obj\Debug\120\android\src\crc64576dc4c3d801c673\EditEntryRenderer.java

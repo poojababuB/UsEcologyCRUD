@@ -66,7 +66,7 @@ namespace USecology_project.ViewModels
 		public INavigation Navigation;
 		public ICommand Edititem { get; set; }
 		#region[Methods]
-		public void ViewMethod()
+		public async Task ViewMethod()
 		{
 			try
 			{

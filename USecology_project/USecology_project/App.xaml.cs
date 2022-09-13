@@ -26,7 +26,7 @@ namespace USecology_project
 			connection.CreateTable<EntryModel>();
 			Instance = this;
 			MainPage = new NavigationPage(new LoginPage());
-			//showentrypage = new ShowEntryPage();
+			
 			
 		}
 
