@@ -27,6 +27,7 @@ namespace USecology_project.ViewModels
 			Navigation = navigation;
 			LoginCommand = new Command(validationMethod);
 		}
+		#region[Methods]
 		private void validationMethod(object obj)
 		{
 			try
@@ -36,5 +37,6 @@ namespace USecology_project.ViewModels
 			}
 			catch (Exception e) { }
 		}
+		#endregion
 	}
 }

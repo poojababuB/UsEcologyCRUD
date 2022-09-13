@@ -3,7 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
              xmlns:local="clr-namespace:USecology_project.Custom"
              x:Class="USecology_project.Views.LoginEntryPage"
-             Title="Login Entry">
+             NavigationPage.HasNavigationBar="True"
+            Title="Login Entry">
+
 
     <ContentPage.Content>
         <Grid x:Name="full">
@@ -35,13 +37,13 @@
                     </Grid.RowDefinitions>
                     <StackLayout Grid.Row="0" Orientation="Horizontal">
                         <Image Source="Name.png" HeightRequest="20" HorizontalOptions="Start"/>
-                        <local:Custom_Entry x:Name="name"
-                                            Text="{Binding ModelName}"
+                        <local:CustomEntry x:Name="name"
+                                            Text="{Binding ModelName,Mode=TwoWay}"
                                             Placeholder="Name     "
                                             MaxLength="50"
                                             PlaceholderColor="Gray">
 
-                        </local:Custom_Entry>
+                        </local:CustomEntry>
                     </StackLayout>
 
                     <StackLayout Grid.Row="1" Orientation="Horizontal">
@@ -50,11 +52,11 @@
 
                     <StackLayout Grid.Row="2" Orientation="Horizontal">
                         <Image Source="Address.png" HeightRequest="20" HorizontalOptions="Start"/>
-                        <local:Custom_Entry x:Name="address"
-                                            Text="{Binding ModelAddress}"
+                        <local:CustomEntry x:Name="address"
+                                            Text="{Binding ModelAddress,Mode=TwoWay}"
                                             MaxLength="100"
                                              Placeholder="Address     " 
-                                             PlaceholderColor="Gray"></local:Custom_Entry>
+                                             PlaceholderColor="Gray"></local:CustomEntry>
                     </StackLayout>
 
                     <StackLayout Grid.Row="3" Orientation="Horizontal">
@@ -63,12 +65,14 @@
 
                     <StackLayout Grid.Row="4" Orientation="Horizontal">
                         <Image Source="State.png" HeightRequest="20" HorizontalOptions="Start"/>
-                        <local:Custom_Entry x:Name="state"
-                                            Text="{Binding ModelState}"
+                        <!--<Picker Title="state"  x:Name="state" TitleColor="blue"
+                                SelectedItem="{Binding ModelState,Mode=TwoWay}"></Picker>-->
+                        <local:CustomEntry x:Name="state"
+                                            Text="{Binding ModelState,Mode=TwoWay}"
                                             Placeholder="State     "
                                             MaxLength="20"
                                             PlaceholderColor="Gray">
-                        </local:Custom_Entry>
+                        </local:CustomEntry>
                     </StackLayout>
 
                     <StackLayout Grid.Row="5" Orientation="Horizontal">
@@ -77,12 +81,12 @@
 
                     <StackLayout Grid.Row="6" Orientation="Horizontal">
                         <Image Source="Phone.png" HeightRequest="20" HorizontalOptions="Start"/>
-                        <local:Custom_Entry x:Name="phone"
-                                            Text="{Binding ModelPhone}"
+                        <local:CustomEntry x:Name="phone"
+                                            Text="{Binding ModelPhone,Mode=TwoWay}"
                                             Placeholder="Phone     " 
                                             PlaceholderColor="Gray"
                                             MaxLength="10">
-                        </local:Custom_Entry>
+                        </local:CustomEntry>
                     </StackLayout>
 
                     <StackLayout Grid.Row="7" Orientation="Horizontal">

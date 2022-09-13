@@ -2,31 +2,52 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="USecology_project.Views.ShowEntryPage"
-             NavigationPage.HasBackButton="false">
+             NavigationPage.HasBackButton="false"
+             Title="View Data">
     <ContentPage.Content>
         <StackLayout>
             <ListView  x:Name="myLists" ItemsSource="{Binding ViewData}" >
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
-                            <Grid x:Name="item">
+                            <Grid x:Name="item" Padding="10">
                                 <Grid.RowDefinitions>
-                                    <RowDefinition Height="3*"/>
-                                    <RowDefinition Height="94*"/>
-                                    <RowDefinition Height="3*"/>
+                                   
+                                    <RowDefinition Height="100*"/>
+                                         
                                 </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="20*"/>
-                                    <ColumnDefinition Width="30*"/>
-                                    <ColumnDefinition Width="40*"/>
-                                    <ColumnDefinition Width="10*"/>
-                                </Grid.ColumnDefinitions>
 
-                                <Label Grid.Row="1" Grid.Column="0" Text="{Binding Id}" TextColor="Blue" FontSize="25" FontAttributes="Bold"  HorizontalOptions="CenterAndExpand"/>
-                                <Label Grid.Row="1" Grid.Column="1" Text="{Binding Name}" TextColor="Green" FontSize="25" FontAttributes="Bold"  HorizontalOptions="CenterAndExpand"/>
-                                <Label Grid.Row="1" Grid.Column="2" Text="{Binding Address}" TextColor="Magenta" FontSize="25" FontAttributes="Bold"  HorizontalOptions="CenterAndExpand"/>
-                                <RadioButton Grid.Row="1" Grid.Column="3"/>
-                            </Grid>
+                                <Grid.ColumnDefinitions>
+
+                                    <ColumnDefinition Width="2*"/>
+                                    <ColumnDefinition Width="25*"/>
+                                    <ColumnDefinition Width="15*"/>
+                                    <ColumnDefinition Width="20*"/>
+                                    <ColumnDefinition Width="22*"/>
+                                    <ColumnDefinition Width="2*"/>
+                                    
+                                </Grid.ColumnDefinitions>
+                                
+                                    <!--<Label Grid.Row="0" Grid.Column="1" Text="{Binding Id}" TextColor="Blue"   HorizontalOptions="CenterAndExpand"/>-->
+                                    <Label Grid.Row="0" Grid.Column="1" Text="{Binding Name}" TextColor="Green" HorizontalOptions="CenterAndExpand"/>
+                                    <Label Grid.Row="0" Grid.Column="2" Text="{Binding Address}" TextColor="Magenta" HorizontalOptions="CenterAndExpand"/>
+                                    <Label Grid.Row="0" Grid.Column="3" Text="{Binding State}" TextColor="Brown"  HorizontalOptions="CenterAndExpand"/>
+                                    <Label Grid.Row="0" Grid.Column="4" Text="{Binding Phone}" TextColor="Crimson" HorizontalOptions="CenterAndExpand"/>
+                                
+
+
+
+
+                                <BoxView Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="5" BackgroundColor="Transparent">
+                                    <BoxView.GestureRecognizers>
+                                        <TapGestureRecognizer 
+                     
+                                        Command="{Binding Path=BindingContext.Edititem, Source={x:Reference myLists}}"                                    
+                                                              CommandParameter="{Binding .}"/>
+                                    </BoxView.GestureRecognizers>
+                                </BoxView>
+                                </Grid>
+                           
                         </ViewCell>
 
                     </DataTemplate>

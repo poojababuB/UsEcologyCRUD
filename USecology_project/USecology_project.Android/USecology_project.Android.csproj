@@ -62,7 +62,7 @@
     <PackageReference Include="Xamarin.Essentials" Version="1.7.0" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Custom_Render\CustomRendere_Entry.cs" />
+    <Compile Include="Custom_Render\CustomRendererEntry.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -186,6 +186,8 @@
   <ItemGroup>
     <AndroidResource Include="Resources\mipmap-xxxhdpi\logo_usecology_adaptive_back.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\delete.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>

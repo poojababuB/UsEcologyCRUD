@@ -15,11 +15,7 @@ namespace USecology_project.Views
 	public partial class ShowEntryPage : ContentPage
 	{
 		public ShowViewModel showview;
-		//public EntryViewModel entryview = null;
-		//public ShowEntryPage()
-		//{
-
-		//}
+		
 		public ShowEntryPage()
 		{
 
@@ -40,6 +36,6 @@ namespace USecology_project.Views
 			}
 		}
 
-
+		
 	}
 }

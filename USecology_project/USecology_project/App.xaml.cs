@@ -17,6 +17,7 @@ namespace USecology_project
 		public SQLiteConnection connection = null;
 		public static App Instance = null;
 		public ShowEntryPage showentrypage;
+		public LoginEntryPage loginentrypage;
 		public App()
 		{
 			InitializeComponent();
@@ -25,6 +26,7 @@ namespace USecology_project
 			connection.CreateTable<EntryModel>();
 			Instance = this;
 			MainPage = new NavigationPage(new LoginPage());
+			//showentrypage = new ShowEntryPage();
 			
 		}
 

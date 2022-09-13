@@ -4,11 +4,15 @@
              x:Class="USecology_project.Views.PackBack"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core" xmlns:Views="clr-namespace:USecology_project.Views"
             android:TabbedPage.ToolbarPlacement="Bottom"
-            NavigationPage.HasNavigationBar="false">
-
+            NavigationPage.HasBackButton="false"
+            NavigationPage.HasNavigationBar="False"
+            
+            >
 
     <TabbedPage.Children>
-        <Views:LoginEntryPage Title="User Entry" IconImageSource="Entry.png"/>
-        <Views:ShowEntryPage Title="ListView" IconImageSource="ListShow.png"/>
+       
+        <!--<Views:LoginEntryPage Title="User Entry" IconImageSource="Entry.png"/>
+        
+        <Views:ShowEntryPage Title="ListView" IconImageSource="ListShow.png"/>-->
     </TabbedPage.Children>
 </TabbedPage>

@@ -20,16 +20,16 @@ namespace USecology_project.Views {
         private global::Xamarin.Forms.Grid full;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::USecology_project.Custom.Custom_Entry name;
+        private global::USecology_project.Custom.CustomEntry name;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::USecology_project.Custom.Custom_Entry address;
+        private global::USecology_project.Custom.CustomEntry address;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::USecology_project.Custom.Custom_Entry state;
+        private global::USecology_project.Custom.CustomEntry state;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::USecology_project.Custom.Custom_Entry phone;
+        private global::USecology_project.Custom.CustomEntry phone;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Button btnAdd;
@@ -38,10 +38,10 @@ namespace USecology_project.Views {
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(LoginEntryPage));
             full = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Grid>(this, "full");
-            name = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::USecology_project.Custom.Custom_Entry>(this, "name");
-            address = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::USecology_project.Custom.Custom_Entry>(this, "address");
-            state = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::USecology_project.Custom.Custom_Entry>(this, "state");
-            phone = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::USecology_project.Custom.Custom_Entry>(this, "phone");
+            name = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::USecology_project.Custom.CustomEntry>(this, "name");
+            address = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::USecology_project.Custom.CustomEntry>(this, "address");
+            state = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::USecology_project.Custom.CustomEntry>(this, "state");
+            phone = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::USecology_project.Custom.CustomEntry>(this, "phone");
             btnAdd = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "btnAdd");
         }
     }

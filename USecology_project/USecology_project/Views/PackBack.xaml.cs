@@ -15,6 +15,16 @@ namespace USecology_project.Views
 		public PackBack()
 		{
 			InitializeComponent();
+			App.Instance.showentrypage = new ShowEntryPage();
+			App.Instance.loginentrypage = new LoginEntryPage();
+			var showpage = new NavigationPage(App.Instance.showentrypage);
+			var navpage = new NavigationPage(App.Instance.loginentrypage);
+			navpage.Title = "UserEntry";
+			navpage.IconImageSource = "Entry.png";
+			showpage.Title = "ListView";
+			showpage.IconImageSource = "ListShow.png";
+			this.Children.Add(navpage);
+			this.Children.Add(showpage);
 		}
 	}
 }

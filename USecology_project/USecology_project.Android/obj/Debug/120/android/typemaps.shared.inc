@@ -34713,7 +34713,7 @@
 
 	.type	.L.java_type_name.6942, @object
 .L.java_type_name.6942:
-	.asciz	"crc641604e781815c1990/CustomRendere_Entry"
+	.asciz	"crc641604e781815c1990/CustomRendererEntry"
 	.size	.L.java_type_name.6942, 42
 
 	.type	.L.java_type_name.6943, @object
@@ -99267,7 +99267,7 @@
 
 	.type	.L.managed_type_name.9807, @object
 .L.managed_type_name.9807:
-	.asciz	"USecology_project.Droid.Custom_Render.CustomRendere_Entry, USecology_project.Android"
+	.asciz	"USecology_project.Droid.Custom_Render.CustomRendererEntry, USecology_project.Android"
 	.size	.L.managed_type_name.9807, 85
 
 	.type	.L.managed_type_name.9808, @object

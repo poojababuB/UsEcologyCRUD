@@ -7,6 +7,7 @@ namespace USecology_project.Models
 {
 	public class EntryModel
 	{
+		#region[Properties]
 		[PrimaryKey]
 		[AutoIncrement]
 		public int Id { get; set; }
@@ -15,5 +16,6 @@ namespace USecology_project.Models
 		public string State { get; set; }
 		[MaxLength(10)]
 		public string Phone { get; set; }
+		#endregion
 	}
 }

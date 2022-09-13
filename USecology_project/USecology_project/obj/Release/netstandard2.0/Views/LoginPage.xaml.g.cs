@@ -20,10 +20,10 @@ namespace USecology_project {
         private global::Xamarin.Forms.Grid full;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::USecology_project.Custom.Custom_Entry username;
+        private global::USecology_project.Custom.CustomEntry username;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::USecology_project.Custom.Custom_Entry password;
+        private global::USecology_project.Custom.CustomEntry password;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Button loginButton;
@@ -32,8 +32,8 @@ namespace USecology_project {
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(LoginPage));
             full = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Grid>(this, "full");
-            username = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::USecology_project.Custom.Custom_Entry>(this, "username");
-            password = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::USecology_project.Custom.Custom_Entry>(this, "password");
+            username = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::USecology_project.Custom.CustomEntry>(this, "username");
+            password = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::USecology_project.Custom.CustomEntry>(this, "password");
             loginButton = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Button>(this, "loginButton");
         }
     }

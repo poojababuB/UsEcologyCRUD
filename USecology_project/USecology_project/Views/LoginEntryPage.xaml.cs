@@ -12,10 +12,16 @@ namespace USecology_project.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class LoginEntryPage : ContentPage
 	{
+		//List<string> state = new List<string>();
 		public LoginEntryPage()
 		{
 			InitializeComponent();
-			BindingContext=new EntryViewModel(Navigation);
+			//state.Add("Tamilnadu");
+			BindingContext =new EntryViewModel(Navigation);
+
+
+			
+
 		}
 
 	}

@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Input;
 using USecology_project.Models;
 using USecology_project.Views;
@@ -12,11 +14,61 @@ namespace USecology_project.ViewModels
 {
 	public class EntryViewModel : INotifyPropertyChanged
 	{
-		public int ModelId { get; set; }
-		public string ModelName { get; set; }
-		public string ModelAddress { get; set; }
-		public string ModelState { get; set; }
-		public string ModelPhone { get; set; }
+		#region[Properties]
+		private int modelId { get; set; }
+		private string modelName { get; set; }
+		private string modelAddress { get; set; }
+		private string modelState { get; set; }
+		private string modelPhone { get; set; }
+
+		public int ModelId 
+		{ 
+			get { return modelId; } 
+			set { 
+				modelId = value;
+				OnPropertyChanged("ModelId");
+					}
+		}
+
+		public string ModelName
+		{
+			get { return modelName; }
+			set
+			{
+				modelName = value;
+				OnPropertyChanged("ModelName");
+			}
+		}
+
+		public string ModelAddress
+		{
+			get { return modelAddress; }
+			set
+			{
+				modelAddress = value;
+				OnPropertyChanged("ModelAddress");
+			}
+		}
+
+		public string ModelState
+		{
+			get { return modelState; }
+			set
+			{
+				modelState = value;
+				OnPropertyChanged("ModelState");
+			}
+		}
+		public string ModelPhone
+		{
+			get { return modelPhone; }
+			set
+			{
+				modelPhone = value;
+				OnPropertyChanged("ModelPhone");
+			}
+		}
+		#endregion
 
 		private ObservableCollection<EntryModel> modelSql = new ObservableCollection<EntryModel>();
 
@@ -26,6 +78,8 @@ namespace USecology_project.ViewModels
 			set
 			{
 				modelSql = value;
+				OnPropertyChanged("ModelSql");
+
 			}
 		}
 		public event PropertyChangedEventHandler PropertyChanged;
@@ -34,6 +88,7 @@ namespace USecology_project.ViewModels
 		{
 			PropertyChanged?.Invoke(this, new PropertyChangedEventArgs(PropertyName));
 		}
+		
 		public ICommand submit { get; set; }
 		public INavigation Navigation;
 		public EntryViewModel(INavigation navigation)
@@ -48,14 +103,15 @@ namespace USecology_project.ViewModels
 			}
 			catch (Exception) { }
 		}
-		private void AddMethod(object obj)
+		#region[Methods]
+		async void AddMethod(object obj)
 		{
 			try
 			{
 				if (!string.IsNullOrEmpty(ModelName) && !string.IsNullOrEmpty(ModelAddress) && !string.IsNullOrEmpty(ModelState) && !string.IsNullOrEmpty(ModelPhone))
 				{
 					EntryModel post = new EntryModel();
-					post.Id = ModelId;
+					//post.Id = ModelId;
 					post.Name = ModelName;
 					post.Address = ModelAddress;
 					post.State = ModelState;
@@ -63,8 +119,19 @@ namespace USecology_project.ViewModels
 
 					App.Instance.database.InsertData(post);
 					ModelSql.Add(post);
-					Application.Current.MainPage.DisplayAlert("Success!", "Data Added Successfully", "Ok", "Cancel");
+					bool answer = await Application.Current.MainPage.DisplayAlert("Success!", "Data Added Successfully", "Ok", "Cancel");
 					
+					if (answer)
+					{
+						ModelName = string.Empty; 
+						ModelAddress = string.Empty;
+						ModelState = string.Empty;
+						ModelPhone = string.Empty;
+					}
+
+
+
+
 				}
 
 				
@@ -78,19 +145,6 @@ namespace USecology_project.ViewModels
 
 			}
 		}
-		//public void ViewMethod()
-		//{
-		//	try
-		//	{
-		//		EntryModel sqlliteModel = new EntryModel();
-
-		//		var clue = App.Instance.database.GetAllData();
-
-		//		App.Instance.entrypage = new ShowEntryPage(clue);
-
-
-		//	}
-		//	catch (Exception e) { }
-		//}
+		#endregion
 	}
 }

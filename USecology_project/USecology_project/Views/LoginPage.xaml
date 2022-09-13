@@ -54,15 +54,15 @@
                     </Grid.RowDefinitions>  
                     <StackLayout Grid.Row="0" Orientation="Horizontal">
                         <Image Source="user.png" HorizontalOptions="Start"/>
-                        <local:Custom_Entry Style="{StaticResource LoginEntry}" x:Name="username" Text="{Binding Username}" Placeholder="Username     " MaxLength="50" PlaceholderColor="Gray">
-                        </local:Custom_Entry>
+                        <local:CustomEntry Style="{StaticResource LoginEntry}" x:Name="username" Text="{Binding Username}" Placeholder="Username     " MaxLength="50" PlaceholderColor="Gray">
+                        </local:CustomEntry>
                     </StackLayout>
                     <StackLayout Grid.Row="1" Orientation="Horizontal">
                         <BoxView HorizontalOptions="FillAndExpand" Color="LightGray"/>
                     </StackLayout>
                     <StackLayout Grid.Row="2" Orientation="Horizontal">
                         <Image Source="key.png" HeightRequest="20" HorizontalOptions="Start"/>
-                        <local:Custom_Entry x:Name="password" MaxLength="8" IsPassword="True" Placeholder="Password     " PlaceholderColor="Gray"></local:Custom_Entry>
+                        <local:CustomEntry x:Name="password" MaxLength="8" IsPassword="True" Placeholder="Password     " PlaceholderColor="Gray"></local:CustomEntry>
                         
                     </StackLayout>
                 </Grid>
@@ -73,7 +73,7 @@
                 <Grid >
                     <StackLayout Orientation="Horizontal" Grid.Row="0">
                         <Image Source="location.png" HorizontalOptions="Start"/>
-                        <local:Custom_Entry  MaxLength="5" Placeholder="Location Code" PlaceholderColor="Gray"></local:Custom_Entry>
+                        <local:CustomEntry  MaxLength="5" Placeholder="Location Code" PlaceholderColor="Gray"></local:CustomEntry>
                         
                     </StackLayout>
                 </Grid>
